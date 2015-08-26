@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="mousetrap.min.js"></script>
+<script src="globalBind.js"></script>
+<script src="main.js"></script>
+<style>
+@font-face {
+	font-family: Lato;
+	src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Goodfoot;
+    src: url('fonts/goodfoot-webfont.ttf');
+}
+@font-face {
+	font-family: Oxygen;
+	src:url("fonts/oxygen-regular.ttf");
+}
+html { 
+	background-color: black;
+	color: white;
+  overflow: hidden;  
+	font-family: Oxygen;
+	font-size: 70px;
+
+}
+.indent {
+	text-indent: 1.5em;
+}
+#textDiv {
+  position: absolute;
+  height: 75%;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+ }
+
+
+</style>
+<!-- sample audio tag -->
+<!-- <audio id="audio1" src='' preload="auto"></audio> -->
+</head>
+<body>
+		<!-- Editor Div -->
+	<div id="editorDiv" style="display:none">
+	<textarea id="editor_js" rows="40" style="width:35%;">
+	</textarea>
+	<input id="butttn" type="button" value="run">
+	</div>
+	<!-- Editor Div End -->	
+<div id="textDiv">
+</div>
+
+<span id="bottom"></span>
+</body>
+</html>
