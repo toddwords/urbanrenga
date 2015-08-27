@@ -117,7 +117,6 @@ function showPoem(poem, speed){
     var p = setInterval(function(){
         if(index >= poemArray.length){
             clearInterval(p);
-            $('#textDiv').append('<br>')
         } else{
         twinkleIn(poemArray[index], speed)
         index++;
